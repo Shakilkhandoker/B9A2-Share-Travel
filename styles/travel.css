@@ -311,7 +311,7 @@ nav .menu-btn {
     color: #5a5a5d;
     font-size: 16px;
     font-weight: 400;
-    margin: 16px auto;
+    margin: 14px auto;
 }
 
 .badge-btn {
@@ -319,7 +319,7 @@ nav .menu-btn {
     text-align: center;
     font-size: 20px;
     font-weight: 800;
-    margin-top: 20px;
+    margin-top: 16px;
 }
 
 .packages-btn {
