@@ -47,14 +47,12 @@ nav li {
 
 nav li a {
     color: #424247;
-    font-size: 18px;
-    font-family: 400;
+    font-size: 20px;
 }
 
 
 
 nav li a:hover {
-    font-size: 30px;
     font-weight: 700;
     transition: .6s;
 }
@@ -165,7 +163,7 @@ nav .menu-btn {
     margin-bottom: 24px;
 }
 
-.tour-ul-description ul li {
+.tour-ul-description ol li {
     padding-bottom: 15px;
 }
 
@@ -199,7 +197,23 @@ nav .menu-btn {
     margin: 20px auto;
 }
 
+.destination-image {
+    position: relative;
+    text-align: center;
+    color: white;
+}
 
+.destination-image-text {
+    position: absolute;
+    top: 45%;
+    left:45%;
+    font-size: 28px;
+}
+.destination-photo-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
 
 .choose-first-box {
     width: 573px;
@@ -345,7 +359,7 @@ nav .menu-btn {
 
 /* footer */
 .footer-container {
-    width: 100%;
+    /* width: 100%; */
     height: 650px;
     background: rgba(19, 19, 24, 0.05);
     margin: 80px auto;
@@ -360,6 +374,35 @@ nav .menu-btn {
     font-weight: 400;
     line-height: 26px;
     margin: 20px auto;
+}
+
+.footer-social-section {
+    display: flex;
+    justify-content: center;
+    margin: 32px auto;
+    gap: 20px;
+
+}
+
+.footer-hori {
+    width: 800px;
+    height: 1.5px;
+    background: rgba(19, 19, 24, 0.497);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px auto;
+}
+
+.footer-copy-right {
+    color: #131318;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+    margin-top: 50px;
 }
 
 
@@ -432,6 +475,11 @@ nav .menu-btn {
         background: rgba(255, 255, 255, 0.30);
         gap: 10px;
         margin-top: 20px;
+    }
+    .destination-photo-section{
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5px 0;
     }
 
     .popular-tour-container {
