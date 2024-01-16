@@ -14,6 +14,9 @@ body {
 }
 
 /* header section */
+.header-container {
+    margin-top: 52px;
+}
 
 /* nav section */
 .logo-text {
@@ -50,8 +53,6 @@ nav li a {
     font-size: 20px;
 }
 
-
-
 nav li a:hover {
     font-weight: 700;
     transition: .6s;
@@ -74,6 +75,7 @@ nav .menu-btn {
     width: 1170px;
     background-size: cover;
     border-radius: 16px;
+    margin-top: 48px;
 }
 
 .banner-title {
@@ -82,7 +84,7 @@ nav .menu-btn {
     align-items: center;
     padding-top: 106px;
     color: #fff;
-    font-size: 70px;
+    font-size: 64px;
     font-weight: 800;
 }
 
@@ -112,8 +114,8 @@ nav .menu-btn {
     height: 52px;
     border-radius: 8px;
     background: #fff;
-    text-align: center;
     border: none;
+    padding-left: 15px;
 }
 
 
@@ -123,9 +125,8 @@ nav .menu-btn {
     height: 52px;
     border-radius: 8px;
     background: #fff;
-    text-align: center;
     border: none;
-    font-size: 20px;
+    padding-left: 20px;
 }
 
 /* main section */
@@ -181,12 +182,16 @@ nav .menu-btn {
 }
 
 /* Choose your destination */
+
+.destination-container {
+    margin-top: 100px;
+}
+
 .primary-title {
     color: #131318;
     text-align: center;
     font-size: 40px;
     font-weight: 800;
-    margin-top: 100px;
 }
 
 .primary-description {
@@ -194,7 +199,7 @@ nav .menu-btn {
     text-align: center;
     font-size: 16px;
     width: 840px;
-    margin: 20px auto;
+    margin: 30px auto;
 }
 
 .destination-image {
@@ -206,22 +211,29 @@ nav .menu-btn {
 .destination-image-text {
     position: absolute;
     top: 45%;
-    left:45%;
+    left: 40%;
     font-size: 28px;
 }
-.destination-photo-section{
+
+.destination-photo-section {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
+}
+
+/* why choose us section */
+
+.why-choose-container {
+    margin-top: 100px;
 }
 
 .choose-first-box {
     width: 573px;
     height: 284px;
     border-radius: 16px;
-    border: 2px solid rgba(216, 121, 12, 0.294);
+    border: 2px solid rgba(216, 121, 12, 0.495);
     background: rgba(227, 121, 8, 0.072);
-    padding: 32px;
+    padding: 35px;
     margin-top: 50px;
 }
 
@@ -244,6 +256,7 @@ nav .menu-btn {
     font-weight: 400;
     line-height: 26px;
     margin-bottom: 40px;
+    font-weight: 400;
 }
 
 .choose-first-row {
@@ -258,10 +271,18 @@ nav .menu-btn {
     align-items: center;
 }
 
-.discount-image {
-    width: 1170px;
+
+/* deals and discount section */
+
+.discount-container {
+    margin-top: 100px;
+}
+
+.discount-box {
+    background-image: url(../Images/Group\ 39.png);
+    margin: 40px 0;
+
     height: 500px;
-    flex-shrink: 0;
 }
 
 .discount-badge {
@@ -270,7 +291,7 @@ nav .menu-btn {
     text-align: center;
     padding: 25px;
     position: relative;
-    top: -400px;
+    top: 100px;
     right: -45%;
     border-radius: 16px;
     border: 2px solid #FFF;
@@ -301,10 +322,50 @@ nav .menu-btn {
     margin-top: 20px;
 }
 
+.packages-btn {
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 0 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
 /* A Simple Perfect Place To Get Lost */
 .simple-perfect-container {
+    margin-top: 110px;
+}
+
+.simple-perfect-content {
     display: flex;
     justify-content: space-between;
+    margin-top: 60px;
+}
+
+.tour-first-description {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    width: 532px;
+}
+
+.tour-ul-description {
+    color: #131318;
+    font-size: 16px;
+    font-weight: 700;
+    width: 518px;
+}
+.tour-ul-description li{
+    margin-bottom: 20px;
+}
+
+/* newsletter section  */
+
+.newsletter-container{
+    margin-top: 100px;
 }
 
 .newsletter-title {
@@ -351,19 +412,22 @@ nav .menu-btn {
     margin-top: 34px;
 }
 
-.newsletter-container {
+.newsletter-content {
     display: flex;
     margin-top: 100px;
     justify-content: space-between;
 }
 
 /* footer */
-.footer-container {
-    /* width: 100%; */
+
+.footer-container{
+    margin-top: 100px;
+}
+.footer-content {
+    width: 100dvw;
     height: 650px;
     background: rgba(19, 19, 24, 0.05);
-    margin: 80px auto;
-    margin-bottom: 0;
+    border: 3px solid red;
 }
 
 .footer-description {
@@ -420,116 +484,12 @@ nav .menu-btn {
 
 
 /* mobile device */
-@media screen and (max-width:375px) {
-    nav ul {
-        position: fixed;
-        top: 80px;
-        height: 100vh;
-        width: 100%;
-        display: block;
-        right: -100%;
-        transition: all 0.5s ease;
-    }
-
-    nav ul li {
-        margin-top: 30px 0;
-
-    }
-
-    nav .menu-btn {
-        display: block;
-    }
-
-    #click:checked~ul {
-        left: 0%;
-    }
-
-    .logo-text img {
-        width: 28px;
-        height: 33px;
-    }
-
-    .logo {
-        font-size: 21px;
-        width: 120px;
-    }
-
-    .header-name {
-        font-size: 21px;
-    }
-
-    .banner {
-        width: 335px;
-        height: 483px;
-    }
-
-    .banner-title {
-        font-size: 22px;
-        margin-top: 40px;
-    }
-
-    .banner-choose {
-        flex-direction: column;
-        justify-content: center;
-        border-radius: 8px;
-        background: rgba(255, 255, 255, 0.30);
-        gap: 10px;
-        margin-top: 20px;
-    }
-    .destination-photo-section{
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 5px 0;
-    }
-
-    .popular-tour-container {
-        width: 335px;
-        height: 342px;
-        flex-direction: column;
-        padding-right: 20px;
-    }
-
-    .discount-image {
-        width: 335px;
-        height: 500px;
-    }
-
-    .discount-badge {
-        width: 303px;
-        height: 297px;
-    }
+@media screen and (max-width:576px) {
+    
 }
 
 
 /* Tablet device */
-@media screen and (min-width: 375px) and (max-width:770px) {
-    nav ul {
-        position: fixed;
-        top: 80px;
-        height: 100vh;
-        width: 100%;
-        display: block;
-        right: -100%;
-        transition: all 0.5s ease;
-    }
-
-    nav ul li {
-        margin-top: 30px 0;
-
-    }
-
-    nav .menu-btn {
-        display: block;
-    }
-
-    #click:checked~ul {
-        left: 0%;
-    }
-
-    .popular-tour-container {
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        padding: 0 30px;
-    }
+@media screen and (min-width: 576px) and (max-width:770px) {
+    
 }
