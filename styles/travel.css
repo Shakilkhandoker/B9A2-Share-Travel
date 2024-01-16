@@ -1,63 +1,114 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Mulish', sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
-body{
+
+body {
     max-width: 1170px;
     margin: 0 auto;
+    min-height: 100vh;
 }
 
 /* header section */
 
-.header-name{
-    font-size: 36px;
-    font-weight: 800;
-    color: #131318;
-}
-.header-container{
-    margin-top: 52px;
-}
-.nav-icon{
-    display: flex;
-    gap: 16px;
-    align-items: center;
-}
-.nav-container{
+/* nav section */
+nav{
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
-
-.nav-container a{
-    text-decoration: none;
-    margin-left: 40px;
+nav ul{
+    display: flex;
+}
+ nav li{
+    margin-right: 40px;
+ }
+ nav li a{
     color: #424247;
     font-size: 18px;
+    font-family: 400;
+ }
+
+ nav li a:hover{
+    font-size: 30px;
+    font-weight: 700;
+    transition: .6s;
+ }
+nav .menu-btn{
+    color: black;
+    font-size: 22px;
+    cursor: pointer;
 }
- .navbar ul{
-    display: inline-block;
- }
 
- .navbar li {
-   display: inline-block;
- }
+/* banner section */
+.banner{   
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+    height: 500px;
+    width: 1170px;
+    background-size: cover;
+    position: fixed;
+    border-radius: 16px;
+}
+
+.banner-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 106px;
+    color: #fff;
+    font-size: 64px;
+    font-weight: 800;
+}
+.banner-description{
+    width: 676px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 16px;
+}
 
 
- 
 
 
 
- /* mobile device */
- @media screen and (max-width:375px) {
-    .header-name{
+
+
+
+
+
+/* mobile device */
+@media screen and (max-width:375px) {
+    .header-name {
         font-size: 21px;
     }
-    
- }
+    .banner{
+        width: 335px;
+        height: 483px;
+    }
+    .banner-title{
+        font-size: 22px;
+        margin-top: 40px;
+    }
+}
 
- /* Tablet device */
- @media screen and (min-width: 375px) and (max-width:768px) {
-    
- }
+/* Tablet device */
+@media screen and (min-width: 375px) and (max-width:770px) {
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        display: block;
+    }
+    nav ul li{
+        margin-top: 20px 0;
+    }
+}
