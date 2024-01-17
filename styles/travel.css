@@ -79,13 +79,12 @@ nav .menu-btn {
 }
 
 .banner-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding-top: 106px;
     color: #fff;
     font-size: 64px;
     font-weight: 800;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .banner-description {
@@ -254,7 +253,7 @@ nav .menu-btn {
     color: #5A5A5D;
     font-size: 16px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 16px;
     margin-bottom: 40px;
     font-weight: 400;
 }
@@ -574,6 +573,37 @@ nav .menu-btn {
         width: 120px;
     }
 
+    /* banner section */
+    .banner-title {
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    .banner-description {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        width: 304px;
+    }
+
+    .banner-choose {
+        display: flex;
+        width: 287px;
+        padding: 16px;
+        background: transparent;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .banner {
+        background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+        width: 380px;
+        height: 483px;
+        background-size: cover;
+        border-radius: 16px;
+    }
+
 
     /* our popular tours */
     .popular-tour-container {
@@ -645,17 +675,39 @@ nav .menu-btn {
 
     .choose-first-box {
         width: 335px;
-        height: 420px;
+        height: 320px;
         border-radius: 16px;
         border: 2px solid rgba(216, 121, 12, 0.495);
         background: rgba(227, 121, 8, 0.072);
-        padding: 35px;
+        padding: 25px;
         margin-top: 50px;
+    }
+
+    .box-title {
+        font-size: 20px;
+    }
+
+    .box-description {
+        font-size: 14px;
+        line-height: 16px;
+        width: 271px;
     }
 
     /* we offer best services */
     .service-container {
         margin-top: 25px;
+    }
+
+    .primary-title {
+        font-size: 28px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-description {
+        font-size: 16px;
     }
 
     .service-card-container {
@@ -721,6 +773,7 @@ nav .menu-btn {
         font-weight: 800;
     }
 
+
     /* newsletter section */
     .newsletter-container {
         margin-top: 25px;
@@ -747,6 +800,7 @@ nav .menu-btn {
         bottom: 110px;
         right: -45%;
     }
+
     .badge-line-one {
         transform: rotate(-19.deg);
         color: #FFF;
@@ -755,7 +809,7 @@ nav .menu-btn {
         font-weight: 400;
         padding-top: 20px;
     }
-    
+
     .badge-line-two {
         transform: rotate(-19.deg);
         color: #FFF;
@@ -764,14 +818,15 @@ nav .menu-btn {
     }
 
     /* footer section  */
-    .footer-container{
+    .footer-container {
         margin-top: 25px;
     }
 
-    .footer-description{
+    .footer-description {
         width: 287px;
     }
-    .footer-line{
+
+    .footer-line {
         width: 335px;
     }
 }
