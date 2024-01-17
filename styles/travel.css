@@ -491,10 +491,9 @@ nav .menu-btn {
 }
 
 .footer-content {
-    width: 100dvw;
+    width: 100%;
     height: 650px;
-    background: rgba(19, 19, 24, 0.05);
-    border: 3px solid red;
+    background: rgba(19, 19, 24, 0.147);
 }
 
 .footer-description {
@@ -515,10 +514,10 @@ nav .menu-btn {
 
 }
 
-.footer-hori {
+.footer-line {
     width: 800px;
     height: 1.5px;
-    background: rgba(19, 19, 24, 0.497);
+    background: rgba(19, 19, 24, 0.27);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -535,16 +534,6 @@ nav .menu-btn {
     text-align: center;
     margin-top: 50px;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -772,5 +761,17 @@ nav .menu-btn {
         color: #FFF;
         font-size: 21px;
         font-weight: 800;
+    }
+
+    /* footer section  */
+    .footer-container{
+        margin-top: 25px;
+    }
+
+    .footer-description{
+        width: 287px;
+    }
+    .footer-line{
+        width: 335px;
     }
 }
