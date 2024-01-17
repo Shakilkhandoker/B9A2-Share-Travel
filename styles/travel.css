@@ -523,7 +523,77 @@ nav .menu-btn {
 
 
 /* mobile device */
-@media screen and (max-width:576px) {}
+@media screen and (max-width:576px) {
+    nav ul {
+        position: fixed;
+        top: 80px;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        right: -100%;
+        transition: all 0.5s ease;
+    }
+
+    nav ul li {
+        margin-top: 30px 0;
+
+    }
+
+    nav .menu-btn {
+        display: block;
+    }
+
+    #click:checked~ul {
+        left: 0%;
+    }
+
+    .logo-text img {
+        width: 28px;
+        height: 33px;
+    }
+
+    .logo {
+        font-size: 21px;
+        width: 120px;
+    }
+
+
+    /* our popular tours */
+    .popular-tour-container {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .tour-text-section {
+        padding: 0 20px;
+        width: 335px;
+
+    }
+
+    .tour-title {
+        color: #131318;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 800;
+        margin-bottom: 24px;
+    }
+
+    .tour-first-description {
+        width: 335px;
+        color: rgba(19, 19, 24, 0.70);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .tour-ul-description {
+        width: 335px;
+    }
+
+    .tour-image {
+        margin-top: 180px;
+    }
+}
 
 
 /* Tablet device */
