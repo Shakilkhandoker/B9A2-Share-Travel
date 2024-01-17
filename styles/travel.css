@@ -456,7 +456,7 @@ nav .menu-btn {
     justify-content: space-between;
 }
 
-.ten-years-badge {
+.offer-badge {
     background: #FF5400;
     border-radius: 16px;
     width: 324px;
@@ -465,7 +465,7 @@ nav .menu-btn {
     transform: rotate(-16.680deg);
     position: relative;
     bottom: 165px;
-    right: -51%;
+    right: -50.8%;
 }
 
 .badge-line-one {
@@ -737,4 +737,40 @@ nav .menu-btn {
         margin-top: 25px;
     }
 
+    .newsletter-sub-container {
+        width: 375px;
+        height: 429px;
+        margin-bottom: 20px;
+
+    }
+
+    .newsletter-content {
+        flex-direction: column;
+    }
+
+    .offer-badge {
+        border-radius: 10px;
+        width: 214.023px;
+        height: 79.268px;
+        text-align: center;
+        transform: rotate(-16.680deg);
+        position: relative;
+        bottom: 110px;
+        right: -45%;
+    }
+    .badge-line-one {
+        transform: rotate(-19.deg);
+        color: #FFF;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 400;
+        padding-top: 20px;
+    }
+    
+    .badge-line-two {
+        transform: rotate(-19.deg);
+        color: #FFF;
+        font-size: 21px;
+        font-weight: 800;
+    }
 }
