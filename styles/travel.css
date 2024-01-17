@@ -271,6 +271,43 @@ nav .menu-btn {
     align-items: center;
 }
 
+/* our best services */
+
+.service-container {
+    margin-top: 100px;
+}
+
+
+
+.service-card-container .card {
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    padding: 40px;
+    width: 270px;
+    /* height: 178px; */
+}
+
+.service-card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-title {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+
+.card-description {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 5px;
+
+}
 
 /* deals and discount section */
 
@@ -358,13 +395,14 @@ nav .menu-btn {
     font-weight: 700;
     width: 518px;
 }
-.tour-ul-description li{
+
+.tour-ul-description li {
     margin-bottom: 20px;
 }
 
 /* newsletter section  */
 
-.newsletter-container{
+.newsletter-container {
     margin-top: 100px;
 }
 
@@ -420,9 +458,10 @@ nav .menu-btn {
 
 /* footer */
 
-.footer-container{
+.footer-container {
     margin-top: 100px;
 }
+
 .footer-content {
     width: 100dvw;
     height: 650px;
@@ -484,12 +523,8 @@ nav .menu-btn {
 
 
 /* mobile device */
-@media screen and (max-width:576px) {
-    
-}
+@media screen and (max-width:576px) {}
 
 
 /* Tablet device */
-@media screen and (min-width: 576px) and (max-width:770px) {
-    
-}
+@media screen and (min-width: 576px) and (max-width:770px) {}
