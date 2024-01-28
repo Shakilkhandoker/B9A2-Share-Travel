@@ -6,9 +6,10 @@
     text-decoration: none;
     list-style: none;
 }
-html{
+
+html {
     scroll-behavior: smooth;
- }
+}
 
 
 body {
@@ -327,13 +328,13 @@ nav .menu-btn {
     height: 500px;
 }
 
-.discount-box-second{
+.discount-box-second {
     background-image: url(../Images/Group\ 40.png);
     margin: 40px 0;
     height: 500px;
 }
 
-.discount-badge-second{
+.discount-badge-second {
     width: 579px;
     height: 300px;
     text-align: center;
@@ -760,6 +761,7 @@ nav .menu-btn {
         background: rgba(255, 255, 255, 0.80);
         backdrop-filter: blur(2.5px);
     }
+
     .discount-badge-second {
         width: 303px;
         height: 370px;
